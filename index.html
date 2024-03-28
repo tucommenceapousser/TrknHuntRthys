@@ -44,6 +44,125 @@
   100% { color: #ff0000; } /* Rouge */
 }
 
+@keyframes rainbow-t {
+  0% { color: #ff0000; } /* Rouge */
+  16.66% { color: #ff8000; } /* Orange */
+  33.33% { color: #ffff00; } /* Jaune */
+  49.99% { color: #00ff00; } /* Vert */
+  66.66% { color: #0000ff; } /* Bleu */
+  83.33% { color: #8000ff; } /* Indigo */
+  100% { color: #ff0000; } /* Rouge */
+}
+
+@keyframes rainbow-r {
+  0% { color: #ff8000; } /* Orange */
+  16.66% { color: #ffff00; } /* Jaune */
+  33.33% { color: #00ff00; } /* Vert */
+  49.99% { color: #0000ff; } /* Bleu */
+  66.66% { color: #8000ff; } /* Indigo */
+  83.33% { color: #ff0000; } /* Rouge */
+  100% { color: #ff8000; } /* Orange */
+}
+
+@keyframes rainbow-h {
+  0% { color: #ffff00; } /* Jaune */
+  16.66% { color: #00ff00; } /* Vert */
+  33.33% { color: #0000ff; } /* Bleu */
+  49.99% { color: #8000ff; } /* Indigo */
+  66.66% { color: #ff0000; } /* Rouge */
+  83.33% { color: #ff8000; } /* Orange */
+  100% { color: #ffff00; } /* Jaune */
+}
+
+@keyframes rainbow-a {
+  0% { color: #00ff00; } /* Vert */
+  16.66% { color: #0000ff; } /* Bleu */
+  33.33% { color: #8000ff; } /* Indigo */
+  49.99% { color: #ff0000; } /* Rouge */
+  66.66% { color: #ff8000; } /* Orange */
+  83.33% { color: #ffff00; } /* Jaune */
+  100% { color: #00ff00; } /* Vert */
+}
+
+@keyframes rainbow-c {
+  0% { color: #0000ff; } /* Bleu */
+  16.66% { color: #8000ff; } /* Indigo */
+  33.33% { color: #ff0000; } /* Rouge */
+  49.99% { color: #ff8000; } /* Orange */
+  66.66% { color: #ffff00; } /* Jaune */
+  83.33% { color: #00ff00; } /* Vert */
+  100% { color: #0000ff; } /* Bleu */
+}
+
+@keyframes rainbow-k {
+  0% { color: #8000ff; } /* Indigo */
+  16.66% { color: #ff0000; } /* Rouge */
+  33.33% { color: #ff8000; } /* Orange */
+  49.99% { color: #ffff00; } /* Jaune */
+  66.66% { color: #00ff00; } /* Vert */
+  83.33% { color: #0000ff; } /* Bleu */
+  100% { color: #8000ff; } /* Indigo */
+}
+
+@keyframes rainbow-n {
+  0% { color: #ff0000; } /* Rouge */
+  16.66% { color: #ff8000; } /* Orange */
+  33.33% { color: #ffff00; } /* Jaune */
+  49.99% { color: #00ff00; } /* Vert */
+  66.66% { color: #0000ff; } /* Bleu */
+  83.33% { color: #8000ff; } /* Indigo */
+  100% { color: #ff0000; } /* Rouge */
+}
+@keyframes rainbow-o {
+  0% { color: #ffff00; } /* Jaune */
+  16.66% { color: #00ff00; } /* Vert */
+  33.33% { color: #0000ff; } /* Bleu */
+  49.99% { color: #8000ff; } /* Indigo */
+  66.66% { color: #ff0000; } /* Rouge */
+  83.33% { color: #ff8000; } /* Orange */
+  100% { color: #ffff00; } /* Jaune */
+}
+
+/* Ajoutez les autres keyframes pour chaque lettre */
+
+h4 span:nth-child(1) {
+  animation: rainbow-t 2s infinite;
+}
+
+h4 span:nth-child(2) {
+  animation: rainbow-r 2s infinite;
+}
+
+h4 span:nth-child(3) {
+  animation: rainbow-h 2s infinite;
+}
+
+h4 span:nth-child(4) {
+  animation: rainbow-a 2s infinite;
+}
+
+h4 span:nth-child(5) {
+  animation: rainbow-c 2s infinite;
+}
+
+h4 span:nth-child(6) {
+  animation: rainbow-k 2s infinite;
+}
+
+h4 span:nth-child(7) {
+  animation: rainbow-n 2s infinite;
+}
+
+h4 span:nth-child(8) {
+  animation: rainbow-o 2s infinite;
+}
+
+h4 span:nth-child(9) {
+  animation: rainbow-n-2 2s infinite;
+}
+
+/* Ajoutez les animations pour les autres lettres */
+    
 h4:nth-child(1) {
   animation: rainbow 2s infinite; /* T */
 }
@@ -132,7 +251,17 @@ h4:nth-child(9) {
 </head>
 <body>
   <header>
-    <h2>TrknHuntRthys by </h2><h4>TRHACKNON</h4>
+    <h2>TrknHuntRthys by </h2><h4>
+  <span>T</span>
+  <span>R</span>
+  <span>H</span>
+  <span>A</span>
+  <span>C</span>
+  <span>K</span>
+  <span>N</span>
+  <span>O</span>
+  <span>N</span>
+</h4>
     <h4>Modern and Fast Rhadamanhys Command and Control Server Detection Tool<br> <span style="color:#ffc107">Version: v1.3</span> </h4>
   </header>
 
