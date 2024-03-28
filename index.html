@@ -216,9 +216,33 @@ h4:nth-child(9) {
 
 .rainbow-border {
   border-style: solid;
-  border-width: 2px;
-  animation: rainbow-border 2s infinite;
+  border-width: 5px;
+  animation: rainbow-border 5s infinite linear;
+  position: relative;
 }
+
+.rainbow-border::before,
+.rainbow-border::after {
+  content: '';
+  position: absolute;
+  width: calc(50% - 2.5px);
+  height: calc(50% - 2.5px);
+}
+
+.rainbow-border::before {
+  top: 0;
+  left: 0;
+  border-top: 5px solid transparent;
+  border-right: 5px solid;
+}
+
+.rainbow-border::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid;
+}
+
     
     .container {
       max-width: 800px;
