@@ -204,6 +204,22 @@ h4:nth-child(9) {
   animation: rainbow 2s infinite -4s; /* N */
 }
 
+@keyframes rainbow-border {
+  0% { border-color: #ff0000; } /* Rouge */
+  16.66% { border-color: #ff8000; } /* Orange */
+  33.33% { border-color: #ffff00; } /* Jaune */
+  49.99% { border-color: #00ff00; } /* Vert */
+  66.66% { border-color: #0000ff; } /* Bleu */
+  83.33% { border-color: #8000ff; } /* Indigo */
+  100% { border-color: #ff0000; } /* Rouge */
+}
+
+.rainbow-border {
+  border-style: solid;
+  border-width: 2px;
+  animation: rainbow-border 2s infinite;
+}
+    
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -256,7 +272,7 @@ h4:nth-child(9) {
 </head>
 <body>
   <header>
-    <div style="border : 5px solid #FFA500">
+    <div classe="rainbow-border">
     <h2>TrknHuntRthys by </h2>
     <h4>
   <span>T</span>
