@@ -205,44 +205,23 @@ h4:nth-child(9) {
 }
 
 @keyframes rainbow-border {
-  0% { border-color: #ff0000; } /* Rouge */
-  16.66% { border-color: #ff8000; } /* Orange */
-  33.33% { border-color: #ffff00; } /* Jaune */
-  49.99% { border-color: #00ff00; } /* Vert */
-  66.66% { border-color: #0000ff; } /* Bleu */
-  83.33% { border-color: #8000ff; } /* Indigo */
-  100% { border-color: #ff0000; } /* Rouge */
+  0% { border-color: #ff0000; }
+  16.66% { border-color: #ff8000; }
+  33.33% { border-color: #ffff00; }
+  49.99% { border-color: #00ff00; }
+  66.66% { border-color: #0000ff; }
+  83.33% { border-color: #8000ff; }
+  100% { border-color: #ff0000; }
 }
 
 .rainbow-border {
   border-style: solid;
   border-width: 5px;
-  animation: rainbow-border 5s infinite linear;
-  position: relative;
+  animation: rainbow-border 2s infinite;
+  background: linear-gradient(to right, #ff0000 0%, #ff8000 16.66%, #ffff00 33.33%, #00ff00 49.99%, #0000ff 66.66%, #8000ff 83.33%, #ff0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-.rainbow-border::before,
-.rainbow-border::after {
-  content: '';
-  position: absolute;
-  width: calc(50% - 2.5px);
-  height: calc(50% - 2.5px);
-}
-
-.rainbow-border::before {
-  top: 0;
-  left: 0;
-  border-top: 5px solid transparent;
-  border-right: 5px solid;
-}
-
-.rainbow-border::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: 5px solid transparent;
-  border-left: 5px solid;
-}
-
     
     .container {
       max-width: 800px;
