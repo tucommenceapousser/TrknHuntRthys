@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HuntRthys - README</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #007bff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .feature-header {
+      color: #17a2b8;
+    }
+
+    .install-header {
+      color: #ffc107;
+    }
+
+    .use-header {
+      color: #28a745;
+    }
+
+    .results-header {
+      color: #dc3545;
+    }
+
+    .contributing-header {
+      color: #6c757d;
+    }
+
+    .contact-header {
+      color: #17a2b8;
+    }
+
+    .clone-header {
+      color: #6610f2;
+    }
+
+    details {
+      margin-bottom: 20px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    pre {
+      background-color: #f8f9fa;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HuntRthys</h1>
+    <h4>Modern and Fast Rhadamanhys Command and Control Server Detection Tool<br> <span style="color:#ffc107">Version: v1.3</span> </h4>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2 class="feature-header">About HuntRthys</h2>
+      <p>HuntRthys is a specific, modern and fast command and control detection tool written to detect Command and Control (C2) servers used by the Rhadamanthys Stealer Malware. HuntRthys provides the most reliable and fastest detection among 6 different methods determined as a result of studies on the characteristics and detectability of Rhadamanthys C2 servers.</p>
+    </section>
+
+    <section>
+      <h3 class="feature-header">About Rhadamanthys Stealer Malware</h3>
+      <p>Rhadamanthys Stealer Malware was first identified in September 2022 by a team of researchers at ThreatMon Threat Intelligence, including myself, on a Russian hacker forum. Since its announcement, this malware has continued to evolve. Every day, many new command and control servers are being purchased to serve the Rhadamanthys Stealer malware. Rhadamanthys has been distributed as Stealer Malware since its discovery and its characteristics have not changed. It has its own C2 Command and Control Management Panel. Don't forget to check my blog for more information about the Rhadamanthys malware and the residential control server.</p>
+    </section>
+
+    <section>
+      <h3 class="feature-header">Features</h3>
+      <ul>
+        <li>Specific and fast scanner</li>
+        <li>Single IP address scanner</li>
+        <li>Multi IP address scanner</li>
+        <li>Extended IP info</li>
+        <li>Extended URL info</li>
+        <li>Extended Web Page info</li>
+        <li>Modern tabular format</li>
+        <li>Wide range of results</li>
+        <li>Multithreading support</li>
+      </ul>
+    </section>
+
+    <details>
+      <summary class="install-header">Install HuntRthys</summary>
+      <pre>
+1. Clone the project repository or download the zip file:
+
+git clone https://github.com/tucommenceapousser/TrknHuntRthys.git
+
+2. Install the required Python packages by running the following command:
+
+pip3 install -r requirements.txt
+      </pre>
+    </details>
+
+    <details>
+      <summary class="use-header">Use HuntRthys</summary>
+      <p>HuntRthys is used via a command-line interface. Below are examples of basic usage.</p>
+
+      <h4>Basic Usage</h4>
+      <pre>
+python3 main.py -h
+
+python3 main.py -t &lt;IP_ADDRESS&gt;
+
+python3 main.py -f &lt;FILE_NAME.txt&gt;
+      </pre>
+
+      <h4>Advanced Usage</h4>
+      <pre>
+python3 huntrthys.py -f &lt;FILE_NAME.txt&gt; -mT &lt;THREAD_COUNT&gt;
+
+Note: The "-mT" parameter allows up to 5 threads.
+
+python huntrthys.py -t &lt;IP_ADDRESS&gt; -oJ &lt;OUTPUT_FILE.json&gt;
+      </pre>
+    </details>
+
+    <details>
+      <summary class="results-header">Results</summary>
+      <p>HuntRthys C2 Scanner tool visualizes the scanning results in a tabular format and prints them to the console. Additionally, you can choose to save the results to a JSON file.</p>
+
+      <pre>
+______  __             ________________________
+___  / / ____  __________  /___  __ __  /___  /______  _________  |  Version: v1.3
+__  /_/ /_  / / __  __ _  ____  /_/ _  ____  __ __  / / __  ___/  |  Developed by Eyup Sukru ERGIN
+_  __  / / /_/ /_  / / / /_ _  _, _// /_ _  / / _  /_/ /_(__  )   |  --------------------------------------
+/_/ /_/  \__,_/ /_/ /_/\__/ /_/ |_| \__/ /_/ /_/_\__, / /____/    |  https://ergin.dev
+                                                /____/            |  https://github.com/eyupergin/huntrthys
+
+Specific Rhadamanthys Command and Control Server Detection Tool
+
+[INFO] Total Scanned IP Addresses: 3 | Detected C2: 3
+
+    STATUS         IP ADDRESS      CN    ASN      PAGE TITLE          FULL URL
+--  -------------  --------------  ----  -------  ------------------  --------------------------------------------------
+ 1  [C2 DETECTED]  192.138.111.11  CH    AS51852  Rhadamanthys Admin  http://192.138.111.11:443/admin/console/index.html
+ 2  [C2 DETECTED]  192.138.111.11  CH    AS51852  Rhadamanthys Admin  http://192.138.111.11:443/admin/console/index.html
+ 3  [C2 DETECTED]  192.138.111.11  CH    AS51852  Rhadamanthys Admin  http://192.138.111.11:443/admin/console/index.html
+      </pre>
+    </details>
+
+    <footer>
+      <h3 class="feature-header">License</h3>
+      <p>This project is licensed under the MIT License. See the LICENSE file for more details.</p>
+    </footer>
+
+    <details>
+      <summary class="contributing-header">Contributing</summary>
+      <p>Repo Update Date: 10-11-2023 <br>If you would like to contribute to this project, please open an issue or submit a pull request. Any contributions and suggestions are welcome!</p>
+    </details>
+
+    <details>
+      <summary class="contact-header">Contact</summary>
+      <p>If you have any questions or suggestions, please feel free to contact me. <br>E-mail: ergindev@gmail.com <br>Website: <a href="https://ergin.dev">www.ergin.dev</a> <br>LinkedIn: <a href="https://www.linkedin.com/in/eyupergin">eyupergin</a></p>
+    </details>
+
+    <details>
+      <summary class="clone-header">Clone on Replit</summary>
+      <a href="https://replit.com/badge/github/tucommenceapousser/TrknHuntRthys"><img src="https://replit.com/badge/github/tucommenceapousser/TrknHuntRthys"></a>
+    </details>
+  </div>
+</body>
+</html>
