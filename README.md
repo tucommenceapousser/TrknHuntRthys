@@ -3,7 +3,7 @@
   <a href="https://ergin.dev"><img src="https://raw.githubusercontent.com/EyupErgin/HuntRthys/main/.img/banner-gray.png" width="400px" alt="HuntRthys"></a>
 </p>
 
-<h4 align="center">Modern and Fast Rhadamanhys Command and Control Server Detection Tool<br> Version: v1.3 </h4>
+<h4 align="center">:rocket: <span style="color:#4CAF50">Modern and Fast Rhadamanhys Command and Control Server Detection Tool</span><br> <span style="color:#009688">Version: v1.3</span> </h4>
 
 ---
 
