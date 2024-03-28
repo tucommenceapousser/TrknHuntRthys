@@ -26,7 +26,19 @@
 
     h4, h1, h6 {
       color: #ff0000;
+      animation: rainbow 2s infinite;
     }
+
+    @keyframes rainbow {
+      0% { color: #ff0000; }
+      16.66% { color: #ff8000; }
+      33.33% { color: #ffff00; }
+      49.99% { color: #00ff00; }
+      66.66% { color: #0000ff; }
+      83.33% { color: #8000ff; }
+      100% { color: #ff0000; }
+    }
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -149,7 +161,7 @@ python huntrthys.py -t &lt;IP_ADDRESS&gt; -oJ &lt;OUTPUT_FILE.json&gt;
       <summary class="results-header">Results</summary>
       <p>HuntRthys C2 Scanner tool visualizes the scanning results in a tabular format and prints them to the console. Additionally, you can choose to save the results to a JSON file.</p>
 
-      <pre>
+    <pre>
 ______  __             ________________________
 ___  / / ____  __________  /___  __ __  /___  /______  _________  |  Version: v1.3
 __  /_/ /_  / / __  __ _  ____  /_/ _  ____  __ __  / / __  ___/  |  Developed by Eyup Sukru ERGIN
@@ -188,6 +200,17 @@ Specific Rhadamanthys Command and Control Server Detection Tool
       <summary class="clone-header">Clone on Replit</summary>
       <a href="https://replit.com/badge/github/tucommenceapousser/TrknHuntRthys"><img src="https://replit.com/badge/github/tucommenceapousser/TrknHuntRthys"></a>
     </details>
+
+    <section>
+      <h3 class="feature-header">Resources</h3>
+      <p>GitHub Repository: <a href="https://github.com/alex14324/Rhadamanthys-Stealer">Rhadamanthys-Stealer</a></p>
+      <p>Online Demo: <a href="https://replit.com/@trkn/TrknHuntRthys">TrknHuntRthys</a></p>
+    </section>
+
+    <section>
+      <h3 class="feature-header">Preview</h3>
+      <img src="/TrknHuntRthys.jpg" alt="Preview of TrknHuntRthys">
+    </section>
   </div>
 </body>
 </html>
