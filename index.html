@@ -28,53 +28,58 @@
       color: #8A2BE2
     }
     
-    h4, h6 {
+    h1, h6 {
       color: #ff0000;
       animation: rainbow 2s infinite;
       display: inline-block;
     }
 
-
 @keyframes rainbow {
-  0% {
-    color: #ff0000;
-  }
-  10% {
-    color: #ff8000;
-  }
-  20% {
-    color: #ffff00;
-  }
-  30% {
-    color: #00ff00;
-  }
-  40% {
-    color: #0000ff;
-  }
-  50% {
-    color: #8000ff;
-  }
-  60% {
-    color: #ff00ff;
-  }
-  70% {
-    color: #ff0080;
-  }
-  80% {
-    color: #ff0000;
-  }
-  90% {
-    color: #ff8000;
-  }
-  100% {
-    color: #ffff00;
-  }
+  0% { color: #ff0000; } /* Rouge */
+  16.66% { color: #ff8000; } /* Orange */
+  33.33% { color: #ffff00; } /* Jaune */
+  49.99% { color: #00ff00; } /* Vert */
+  66.66% { color: #0000ff; } /* Bleu */
+  83.33% { color: #8000ff; } /* Indigo */
+  100% { color: #ff0000; } /* Rouge */
 }
 
-h1 {
-  animation: rainbow 2s infinite;
-  display: inline-block;
+h4:nth-child(1) {
+  animation: rainbow 2s infinite; /* T */
 }
+
+h4:nth-child(2) {
+  animation: rainbow 2s infinite -0.5s; /* R */
+}
+
+h4:nth-child(3) {
+  animation: rainbow 2s infinite -1s; /* H */
+}
+
+h4:nth-child(4) {
+  animation: rainbow 2s infinite -1.5s; /* A */
+}
+
+h4:nth-child(5) {
+  animation: rainbow 2s infinite -2s; /* C */
+}
+
+h4:nth-child(6) {
+  animation: rainbow 2s infinite -2.5s; /* K */
+}
+
+h4:nth-child(7) {
+  animation: rainbow 2s infinite -3s; /* N */
+}
+
+h4:nth-child(8) {
+  animation: rainbow 2s infinite -3.5s; /* O */
+}
+
+h4:nth-child(9) {
+  animation: rainbow 2s infinite -4s; /* N */
+}
+
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -127,7 +132,7 @@ h1 {
 </head>
 <body>
   <header>
-    <h2>TrknHuntRthys by </h2><h1>TRHACKNON</h1>
+    <h2>TrknHuntRthys by </h2><h4>TRHACKNON</h4>
     <h4>Modern and Fast Rhadamanhys Command and Control Server Detection Tool<br> <span style="color:#ffc107">Version: v1.3</span> </h4>
   </header>
 
